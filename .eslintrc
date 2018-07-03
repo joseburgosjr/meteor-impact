@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "@meteorjs/eslint-config-meteor"
+  ],
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "meteor": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "meteor": true
+  },
+  "rules": {
+    "react/jsx-one-expression-per-line": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120
+      }
+    ]
+  }
+}
